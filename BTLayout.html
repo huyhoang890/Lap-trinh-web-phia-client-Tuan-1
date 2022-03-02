@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: auto;
+            padding: 0px;
+        }
+        
+        .wrapper {
+            height: 700px;
+            width: 1089px;
+            background-color: aquamarine;
+        }
+        
+        header {
+            height: 150px;
+            width: 100%;
+            background-color: orangered;
+            text-align: center;
+        }
+        
+        nav {
+            height: 50px;
+            width: 100%;
+            background-color: blue;
+            text-align: center;
+        }
+        
+        #content {
+            height: 400px;
+            width: 100%;
+            background-color: rgb(231, 33, 165);
+            clear: both;
+            text-align: center;
+        }
+        
+        aside {
+            height: 400px;
+            width: 30%;
+            background-color: rgb(43, 224, 67);
+            float: left;
+        }
+        
+        section {
+            height: 400px;
+            width: 70%;
+            background-color: rgb(29, 150, 206);
+            float: right;
+        }
+        
+        footer {
+            height: 100px;
+            width: 100%;
+            background-color: rgb(20, 231, 231);
+        }
+        
+        #ar1 {
+            height: 400px;
+            width: 50%;
+            background-color: rgb(180, 221, 30);
+            float: left
+        }
+        
+        #ar2 {
+            height: 400px;
+            width: 50%;
+            background-color: rgb(81, 30, 221);
+            float: left
+        }
+        
+        .menu li {
+            height: 100%;
+            width: 200px;
+            float: left;
+            list-style-type: none;
+            line-height: 50px;
+            text-indent: 15px;
+            position: relative;
+        }
+        
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .menu li:hover {
+            background-color: burlywood;
+        }
+        
+        li:hover>a {
+            font-size: italic;
+            font-weight: bold;
+            color: darkblue
+        }
+        
+        .menu li .submenu {
+            display: none;
+            position: absolute;
+        }
+        
+        .menu li:hover .submenu {
+            display: block
+        }
+    </style>
+
+    <title>Layout</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="https://24h.com.vn">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+                <li><a href="">Item 4</a>
+                    <ul class="submenu">
+                        <li><a href="https://www.google.com.vn/">Item 4.1</a></li>
+                        <li><a href="">Item 4.2</a></li>
+                        <li><a href="">Item 4.3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <header></header>
+
+        <div id="content">
+            <aside>
+                <artical></artical>
+                <article></article>
+            </aside>
+
+            <section>
+                <article id="ar1"></article>
+                <article id="ar2"></article>
+            </section>
+        </div>
+
+        <footer></footer>
+    </div>
+</body>
+
+</html>
